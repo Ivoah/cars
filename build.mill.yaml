@@ -1,0 +1,9 @@
+extends: ScalaModule
+scalaVersion: 3.3.7
+mvnDeps:
+- com.lihaoyi::scalatags:0.13.1
+- net.ivoah::vial:0.12.0
+- org.rogach::scallop:5.2.0
+- commons-logging:commons-logging:1.3.5
+- org.postgresql:postgresql:42.7.10
+- com.typesafe:config:1.4.3
