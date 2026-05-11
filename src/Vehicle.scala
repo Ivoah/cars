@@ -19,7 +19,9 @@ case class Vehicle(
   sellPrice: Option[Double],
   sellDate: Option[LocalDate],
   sellTo: Option[String]
-)
+) {
+  lazy val fullName: String = s"${year} ${make} ${model}${trim.map(" " + _).getOrElse("")}"
+}
 
 object Vehicle {
   def fromResultSet(r: ResultSet): Vehicle = Vehicle(
