@@ -1,1 +1,5 @@
 @import url('https://ivoah.net/common.css');
+
+img {
+    display: block;
+}
